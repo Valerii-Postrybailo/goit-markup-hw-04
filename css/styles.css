@@ -193,6 +193,8 @@ ul.mail-and-tel li:not(:last-child) {
 /*hero*/
 
 .hero {
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 200px;
   padding-bottom: 200px;
 
@@ -520,6 +522,7 @@ li.card:not(:last-child) {
 
 .footer-container {
   display: flex;
+  align-items: baseline;
 }
 
 .social-pages-title {
@@ -577,6 +580,7 @@ ul.button-list {
 .portfolio-button {
   padding: 6px 22px;
   border-radius: 4px;
+  border: none;
 
   font-weight: 500;
   font-size: 16px;
@@ -634,7 +638,12 @@ ul.button-list {
   margin-right: 30px;
 }
 
-.filter-card:hover {
+.filter-card a {
+  display: block;
+}
+
+.filter-card a:hover,
+.filter-card a:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
